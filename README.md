@@ -79,13 +79,13 @@ version: "v1"
 
 ```json
 {
-  "version": "v1",
-  "rows_processed": 10000,
-  "metric": "signal_rate",
-  "value": 0.4990,
-  "latency_ms": 127,
-  "seed": 42,
-  "status": "success"
+    "version": "v1",
+    "rows_processed": 9996,
+    "metric": "signal_rate",
+    "value": 0.4991,
+    "latency_ms": 9,
+    "seed": 42,
+    "status": "success"
 }
 ```
 
