@@ -21,5 +21,7 @@ This repository contains a containerized Python batch job that computes a binary
    ```bash
    pip install -r requirements.txt
 ## Docker Build & Run
-docker build -t mlops-task .
-docker run --rm -v $(pwd):/app mlops-task --input data.csv --config config.yaml --output /app/metrics.json --log-file /app/run.log
+
+1. Build the Docker image:
+   ```bash
+   docker build -t mlops-task .
