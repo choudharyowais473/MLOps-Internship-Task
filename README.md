@@ -24,6 +24,6 @@ This repository contains a containerized Python batch job that computes a binary
 
 1. Build the Docker image:
    ```bash
-   docker build -t mlops-task .c
+   docker build -t mlops-task .
 ```bash
    docker run --rm -v $(pwd):/app mlops-task --input data.csv --config config.yaml --output /app/metrics.json --log-file /app/run.log
