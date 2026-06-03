@@ -27,7 +27,7 @@ def yaml_validator(file_path):
             config = yaml.safe_load(file)
         print(f"YAML file '{file_path}' is valid.")
         
-        # Keep global fallback metadata synchronized for error logs
+        
         if config and "version" in config:
             config_metadata["version"] = str(config["version"])
             
@@ -61,7 +61,7 @@ def rolling_average(df, config_path):
     
     df['rolling_avg'] = df['close'].rolling(window=config['window']).mean()
     
-    # Avoid Pandas SettingWithCopyWarnings by copying the slice explicitly
+     the slice explicitly
     signal_columns = df.dropna().copy()
     signal_columns['signal'] = (signal_columns['close'] > signal_columns['rolling_avg']).astype(int)
     
